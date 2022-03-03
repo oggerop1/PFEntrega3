@@ -23,7 +23,7 @@ h1 {
 .nav-logo {
   width: 20%; }
 
-/*efecto imagenes */
+/*efecto  4 imagenes abajo  */
 wrapper {
   padding: 0px;
   width: 820px;
@@ -71,10 +71,73 @@ wrapper {
 .image-container:hover .image-caption {
   opacity: 1; }
 
+/*Fin efecto  4 imagenes abajo  */
+  
+  /*efecto titulo h3*/
+h1 {
+  display:inline-block;
+  overflow:hidden;
+  white-space:nowrap;
+}
+
+h2:first-of-type {    
+  animation: showup 7s ;
+}
+
+h1:last-of-type {
+  width:0px;
+  animation: reveal 7s infinite;
+}
+
+h1:last-of-type span {
+  margin-left:-355px;
+  animation: slidein 7s infinite;
+}
+
+@keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    80% {opacity:1;}
+    100% {opacity:0;}
+}
+
+@keyframes slidein {
+    0% { margin-left:-800px; }
+    20% { margin-left:-800px; }
+    35% { margin-left:0px; }
+    100% { margin-left:0px; }
+}
+
+@keyframes reveal {
+    0% {opacity:0;width:0px;}
+    20% {opacity:1;width:0px;}
+    30% {width:355px;}
+    80% {opacity:1;}
+    100% {opacity:0;width:355px;}
+}
+/*fin efecto titulo h3*/
+
+/*parrafo estilos*/
+.caja { 
+  font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+  color: #0a0a0a; 
+  font-size: 18px; 
+  font-weight: 400; 
+  text-align: center; 
+  background: #f6f7f8; 
+  margin: 0 0 25px; 
+  overflow: hidden; 
+  padding: 20px; 
+  border-radius: 35px 0px 35px 0px; 
+  -moz-border-radius: 35px 0px 35px 0px; 
+  -webkit-border-radius: 35px 0px 35px 0px; 
+  }
+
+ 
 /*****************************/
 /*estilos vida.html*/
 .vida-img1 {
-  width: 30%;
+  width: 35%;
   align-content: center; }
   .vida-img1:hover {
     -webkit-transform: rotateY(180deg);
