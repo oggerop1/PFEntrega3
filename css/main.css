@@ -73,14 +73,14 @@ wrapper {
 
 /*Fin efecto  4 imagenes abajo  */
   
-  /*efecto titulo h3*/
+/*efecto titulo h3*/
 h1 {
   display:inline-block;
   overflow:hidden;
   white-space:nowrap;
 }
 
-h2:first-of-type {    
+h1:first-of-type {    
   animation: showup 7s ;
 }
 
@@ -117,7 +117,9 @@ h1:last-of-type span {
 }
 /*fin efecto titulo h3*/
 
-/*parrafo estilos*/
+/******************************
+      parrafo estilos
+*******************************/
 .caja { 
   font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
   color: #0c0c0c; 
@@ -133,14 +135,20 @@ h1:last-of-type span {
   -webkit-border-radius: 35px 0px 35px 0px; 
   }
 
- 
-/*****************************/
-/*estilos vida.html*/
+/*****************************
+      estilos vida.html
+******************************/
 .vida-img1 {
   width: 35%;
   align-content: center;
   transition:all 0.3s ease; }
 
+/*
+La propiedad de transición tiene tres valores:
+– las propiedades de la transición (en nuestro caso todos ellos)
+– la velocidad de la transición (en nuestro caso 0,3 segundos)
+– un tercer valor que permite cambiar cómo se calcula la aceleración y desaceleración, pero dejaremos en blanco optando por la opción de default.
+*/
 
 .vida-img1{
         opacity:0.8;
@@ -148,9 +156,10 @@ h1:last-of-type span {
 .vida-img1:hover{
         opacity:1;
 }
-/*
+
+/****************************
 estilos comercio.html
-*/
+******************************/
 .comercio-img1 {
   width: 50%; }
   .comercio-img1:hover {
@@ -158,7 +167,9 @@ estilos comercio.html
     transform: scale(1.15, 1.15);
     opacity: 1; }
 
-/*footer*/
+/******************************
+          footer
+*******************************/
 .footer-cont {
   background-color: #1c2331; }
 
@@ -176,7 +187,9 @@ estilos comercio.html
 .foo-logo {
   width: 10%; }
 
-/*estilos botones*/
+/********************************
+      estilos botones
+*********************************/
 .btn {
   background: black;
   color: white;
@@ -209,8 +222,10 @@ button {
     -webkit-transition: all 0.5s;
     transition: all 0.5s; }
 
-/*estilos Autos*/
-/*estilos autos*/
+
+/************************
+      Estilos Autos
+**************************/
 .auto-img1 {
   width: 50%;
   align-content: center; }
