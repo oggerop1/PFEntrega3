@@ -165,7 +165,11 @@ button {
 
 
 /********************************************
- Medium devices (tablets, 768px and up)
+    ***************************************
+    **********************************
+    Medium devices (tablets, 768px and up)
+    **********************************
+    **********************************
 *********************************************/
     @media (min-width: 768px) {
 
@@ -195,7 +199,7 @@ button {
       /*estilos index*/
       .index-img2 {
         width: 50%;
-       /* box-shadow: 0px 15px 25px -4px rgba(30, 30, 60, 0.25);*/ }
+      }
         .index-img2:hover {
           backface-visibility: hidden;
           transform: scale(1.15, 1.15);
@@ -255,22 +259,22 @@ button {
       /*Fin efecto  4 imagenes abajo  */
         
       /*efecto titulo h3*/
-      h2 {
+      .h2-efecto {
         display:inline-block;
         overflow:hidden;
         white-space:nowrap;
       }
       
-      h2:first-of-type {    
+      .h2-efecto:first-of-type {    
         animation: showup 7s ;
       }
       
-      h2:last-of-type {
+      .h2-efecto:last-of-type {
         width:0px;
         animation: reveal 7s infinite;
       }
       
-      h2:last-of-type span {
+      .h2-efecto:last-of-type span {
         margin-left:-355px;
         animation: slidein 7s infinite;
       }
@@ -525,22 +529,22 @@ button {
       /*Fin efecto  4 imagenes abajo  */
         
       /*efecto titulo h3*/
-      h2 {
+      .h2-efecto {
         display:inline-block;
         overflow:hidden;
         white-space:nowrap;
       }
       
-      h2:first-of-type {    
+      .h2-efecto:first-of-type {    
         animation: showup 7s ;
       }
       
-      h2:last-of-type {
+      .h2-efecto:last-of-type {
         width:0px;
         animation: reveal 7s infinite;
       }
       
-      h2:last-of-type span {
+      .h2-efecto:last-of-type span {
         margin-left:-355px;
         animation: slidein 7s infinite;
       }
