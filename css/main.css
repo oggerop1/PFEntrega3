@@ -5,35 +5,41 @@
   text-align: center; }
 
 img {
-  width: 100%; }
+  width: 100%; 
+}
 
 /*estilos bases*/
+.parrafo-tipo-seguros{
+  font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+  background-color:#fff;
+}
+
 h1 {
-  text-align: center; }
+  text-align: center; 
+  color: #057fd1;
+}
 
+.log-central{
+  width: 40%;
+}
 /*estilos index*/
-#index-img2 {
-  width: 50%;
- /* box-shadow: 0px 15px 25px -4px rgba(30, 30, 60, 0.25);*/ }
-  #index-img2:hover {
-    backface-visibility: hidden;
-    transform: scale(1.15, 1.15);
-    opacity: 1; }
-
+index-img2 {
+  width: 100%;
+}
 .nav-logo {
-  width: 20%; }
+  width: 0%; }
 
 /*efecto  4 imagenes abajo  */
 wrapper {
   padding: 0px;
-  width: 820px;
+  width: 100%;
   height: auto;
   margin: auto;
   overflow: hidden; }
 
 .image-container {
   float: left;
-  width: 250px;
+  width: 100%;
   height: 200px;
   position: relative;
   margin: 10px;
@@ -73,49 +79,7 @@ wrapper {
 
 /*Fin efecto  4 imagenes abajo  */
   
-/*efecto titulo h3*/
-h1 {
-  display:inline-block;
-  overflow:hidden;
-  white-space:nowrap;
-}
 
-h1:first-of-type {    
-  animation: showup 7s ;
-}
-
-h1:last-of-type {
-  width:0px;
-  animation: reveal 7s infinite;
-}
-
-h1:last-of-type span {
-  margin-left:-355px;
-  animation: slidein 7s infinite;
-}
-
-@keyframes showup {
-    0% {opacity:0;}
-    20% {opacity:1;}
-    80% {opacity:1;}
-    100% {opacity:0;}
-}
-
-@keyframes slidein {
-    0% { margin-left:-800px; }
-    20% { margin-left:-800px; }
-    35% { margin-left:0px; }
-    100% { margin-left:0px; }
-}
-
-@keyframes reveal {
-    0% {opacity:0;width:0px;}
-    20% {opacity:1;width:0px;}
-    30% {width:355px;}
-    80% {opacity:1;}
-    100% {opacity:0;width:355px;}
-}
-/*fin efecto titulo h3*/
 
 /******************************
       parrafo estilos
@@ -127,7 +91,7 @@ h1:last-of-type span {
   font-weight: 400; 
   text-align: center; 
   background: #f6f7f8; 
-  margin: 0 0 25px; 
+  margin:25px 0 0 25px; 
   overflow: hidden; 
   padding: 20px; 
   border-radius: 35px 0px 35px 0px; 
@@ -139,33 +103,17 @@ h1:last-of-type span {
       estilos vida.html
 ******************************/
 .vida-img1 {
-  width: 35%;
+  width: 100%;
   align-content: center;
-  transition:all 0.3s ease; }
-
-/*
-La propiedad de transición tiene tres valores:
-– las propiedades de la transición (en nuestro caso todos ellos)
-– la velocidad de la transición (en nuestro caso 0,3 segundos)
-– un tercer valor que permite cambiar cómo se calcula la aceleración y desaceleración, pero dejaremos en blanco optando por la opción de default.
-*/
-
-.vida-img1{
-        opacity:0.8;
-}
-.vida-img1:hover{
-        opacity:1;
+  
 }
 
 /****************************
 estilos comercio.html
 ******************************/
 .comercio-img1 {
-  width: 50%; }
-  .comercio-img1:hover {
-    backface-visibility: hidden;
-    transform: scale(1.15, 1.15);
-    opacity: 1; }
+  width: 100%; }
+  
 
 /******************************
           footer
@@ -185,7 +133,7 @@ estilos comercio.html
   background-color: rgba(0, 0, 0, 0.2); }
 
 .foo-logo {
-  width: 10%; }
+  width: 0%; }
 
 /********************************
       estilos botones
@@ -198,47 +146,553 @@ estilos comercio.html
   font-weight: bold;
   cursor: pointer;
   position: relative;
-  z-index: 1;
-  overflow: hidden; }
-  .btn:hover {
-    color: black; }
-  .btn:after {
-    content: "";
-    background: #0099ff;
-    position: absolute;
-    z-index: -1;
-    left: -20%;
-    right: -20%;
-    top: 0;
-    bottom: 0;
-    transform: skewX(-45deg) scale(0, 1);
-    transition: all 0.5s; }
+   }
+  
 
 button {
   height: 50px;
   width: 300px; }
-  button:hover:after {
-    transform: skewX(-45deg) scale(1, 1);
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s; }
+ 
 
 
 /************************
       Estilos Autos
 **************************/
 .auto-img1 {
-  width: 50%;
+  width: 100%;
   align-content: center; }
 
-.auto-parrafo1 {
-  animation-duration: 1s;
-  animation-name: parrafomoviendose;
-  animation-iteration-count:initial; }
 
-@keyframes parrafomoviendose {
-  from {
-    margin-left: 100%;
-    width: 300%; }
-  to {
-    margin-left: 0%;
-    width: 100%; } }
+
+/********************************************
+ Medium devices (tablets, 768px and up)
+*********************************************/
+    @media (min-width: 768px) {
+
+      .container {
+        box-shadow: 0px 15px 25px -4px rgba(30, 30, 60, 0.25); }
+      
+      .col {
+        text-align: center; }
+      
+      img {
+        width: 100%; }
+      
+      /*estilos bases*/
+      .parrafo-tipo-seguros{
+        font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+        background-color:#fff;
+      }
+      
+      h1 {
+        text-align: center; 
+        color: #057fd1;
+      }
+      
+      .log-central{
+        width: 40%;
+      }
+      /*estilos index*/
+      .index-img2 {
+        width: 50%;
+       /* box-shadow: 0px 15px 25px -4px rgba(30, 30, 60, 0.25);*/ }
+        .index-img2:hover {
+          backface-visibility: hidden;
+          transform: scale(1.15, 1.15);
+          opacity: 1; }
+
+        .nav-logo {
+            width: 20%; 
+        }
+      /*efecto  4 imagenes abajo  */
+      wrapper {
+        padding: 0px;
+        width: 820px;
+        height: auto;
+        margin: auto;
+        overflow: hidden; }
+      
+      .image-container {
+        float: left;
+        width: 250px;
+        height: 200px;
+        position: relative;
+        margin: 10px;
+        cursor: pointer; }
+      
+      .image-container img {
+        position: absolute; }
+      
+      .image-caption {
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        position: absolute;
+        opacity: 0;
+        transition: all 300ms ease-in-out;
+        -webkit-transition: all 300ms ease-in-out;
+        -moz-transition: all 300ms ease-in-out;
+        -o-transition: all 300ms ease-in-out;
+        -ms-transition: all 300ms ease-in-out; }
+      
+      .image-caption h1 {
+        padding: 45px 0px 5px 0px;
+        text-align: center;
+        margin-left: -15px;
+        text-transform: uppercase;
+        font-family: 'Indie Flower', cursive;
+        font-size: 25px;
+        color: #00bfb6; }
+      
+      .image-caption p {
+        text-align: center;
+        font-family: 'Overpass Mono', monospace;
+        color: #fff; }
+      
+      .image-container:hover .image-caption {
+        opacity: 1; }
+      
+      /*Fin efecto  4 imagenes abajo  */
+        
+      /*efecto titulo h3*/
+      h2 {
+        display:inline-block;
+        overflow:hidden;
+        white-space:nowrap;
+      }
+      
+      h2:first-of-type {    
+        animation: showup 7s ;
+      }
+      
+      h2:last-of-type {
+        width:0px;
+        animation: reveal 7s infinite;
+      }
+      
+      h2:last-of-type span {
+        margin-left:-355px;
+        animation: slidein 7s infinite;
+      }
+      
+      @keyframes showup {
+          0% {opacity:0;}
+          20% {opacity:1;}
+          80% {opacity:1;}
+          100% {opacity:0;}
+      }
+      
+      @keyframes slidein {
+          0% { margin-left:-300px; }
+          20% { margin-left:-300px; }
+          35% { margin-left:0px; }
+          100% { margin-left:0px; }
+      }
+      
+      @keyframes reveal {
+          0% {opacity:0;width:0px;}
+          20% {opacity:1;width:0px;}
+          30% {width:355px;}
+          80% {opacity:1;}
+          100% {opacity:0;width:1100px;}
+      }
+      /*fin efecto titulo h3*/
+      
+      /******************************
+            parrafo estilos
+      *******************************/
+      .caja { 
+        font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+        color: #0c0c0c; 
+        font-size: 18px; 
+        font-weight: 400; 
+        text-align: center; 
+        background: #f6f7f8; 
+        margin: 0 0 25px; 
+        overflow: hidden; 
+        padding: 20px; 
+        border-radius: 35px 0px 35px 0px; 
+        -moz-border-radius: 35px 0px 35px 0px; 
+        -webkit-border-radius: 35px 0px 35px 0px; 
+        }
+      
+      /*****************************
+            estilos vida.html
+      ******************************/
+      .vida-img1 {
+        width: 50%;
+        align-content: center;
+        transition:all 0.3s ease; 
+      }
+      
+      /*
+      La propiedad de transición tiene tres valores:
+      – las propiedades de la transición (en nuestro caso todos ellos)
+      – la velocidad de la transición (en nuestro caso 0,3 segundos)
+      – un tercer valor que permite cambiar cómo se calcula la aceleración y desaceleración, pero dejaremos en blanco optando por la opción de default.
+      */
+      
+      .vida-img1{
+              opacity:0.8;
+      }
+      .vida-img1:hover{
+              opacity:1;
+      }
+      
+      
+      /****************************
+      estilos comercio.html
+      ******************************/
+      .comercio-img1 {
+        width: 50%; }
+        .comercio-img1:hover {
+          backface-visibility: hidden;
+          transform: scale(1.15, 1.15);
+          opacity: 1; }
+      
+      /******************************
+                footer
+      *******************************/
+      .footer-cont {
+        background-color: #1c2331; }
+      
+      .footer-section-redes-sociales {
+        background-color: #0099ff; }
+      
+      .footer-hr {
+        width: 60px;
+        background-color: #0099ff;
+        height: 2px; }
+      
+      .footer-div-Copyright {
+        background-color: rgba(0, 0, 0, 0.2); }
+      
+      .foo-logo {
+        width: 10%; }
+      
+      /********************************
+            estilos botones
+      *********************************/
+      .btn {
+        background: black;
+        color: white;
+        border: none;
+        border-radius: 0.625em;
+        font-weight: bold;
+        cursor: pointer;
+        position: relative;
+        z-index: 1;
+        overflow: hidden; }
+        .btn:hover {
+          color: black; }
+        .btn:after {
+          content: "";
+          background: #0099ff;
+          position: absolute;
+          z-index: -1;
+          left: -20%;
+          right: -20%;
+          top: 0;
+          bottom: 0;
+          transform: skewX(-45deg) scale(0, 1);
+          transition: all 0.5s; }
+      
+      button {
+        height: 50px;
+        width: 300px; }
+        button:hover:after {
+          transform: skewX(-45deg) scale(1, 1);
+          -webkit-transition: all 0.5s;
+          transition: all 0.5s; }
+      
+      
+      /************************
+            Estilos Autos
+      **************************/
+      .auto-img1 {
+        width: 50%;
+        align-content: center; }
+      
+      .auto-parrafo1 {
+        animation-duration: 1s;
+        animation-name: parrafomoviendose;
+        animation-iteration-count:initial; }
+      
+      @keyframes parrafomoviendose {
+        from {
+          margin-left: 100%;
+          width: 300%; }
+        to {
+          margin-left: 0%;
+          width: 100%; } }
+    }
+
+
+  /***************************************************
+      ************************************************
+      ************************************************
+      Large devices (desktops, 992px and up)
+      ************************************************
+      ************************************************
+  ****************************************************/
+  
+    @media (min-width: 992px) { 
+
+      .container {
+        box-shadow: 0px 15px 25px -4px rgba(30, 30, 60, 0.25); }
+      
+      .col {
+        text-align: center; }
+      
+      img {
+        width: 100%; }
+      
+      /*estilos bases*/
+      .parrafo-tipo-seguros{
+        font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+        background-color:#fff;
+      }
+      
+      h1 {
+        text-align: center; 
+        color: #057fd1;
+      }
+      
+      .log-central{
+        width: 40%;
+      }
+      /*estilos index*/
+      .index-img2 {
+        width: 50%;
+       /* box-shadow: 0px 15px 25px -4px rgba(30, 30, 60, 0.25);*/ }
+        .index-img2:hover {
+          backface-visibility: hidden;
+          transform: scale(1.15, 1.15);
+          opacity: 1; }
+      
+          .nav-logo {
+            width: 20%; 
+        }
+        
+      /*efecto  4 imagenes abajo  */
+      wrapper {
+        padding: 0px;
+        width: 820px;
+        height: auto;
+        margin: auto;
+        overflow: hidden; }
+      
+      .image-container {
+        float: left;
+        width: 250px;
+        height: 200px;
+        position: relative;
+        margin: 10px;
+        cursor: pointer; }
+      
+      .image-container img {
+        position: absolute; }
+      
+      .image-caption {
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        position: absolute;
+        opacity: 0;
+        transition: all 300ms ease-in-out;
+        -webkit-transition: all 300ms ease-in-out;
+        -moz-transition: all 300ms ease-in-out;
+        -o-transition: all 300ms ease-in-out;
+        -ms-transition: all 300ms ease-in-out; }
+      
+      .image-caption h1 {
+        padding: 45px 0px 5px 0px;
+        text-align: center;
+        margin-left: -15px;
+        text-transform: uppercase;
+        font-family: 'Indie Flower', cursive;
+        font-size: 25px;
+        color: #00bfb6; }
+      
+      .image-caption p {
+        text-align: center;
+        font-family: 'Overpass Mono', monospace;
+        color: #fff; }
+      
+      .image-container:hover .image-caption {
+        opacity: 1; }
+      
+      /*Fin efecto  4 imagenes abajo  */
+        
+      /*efecto titulo h3*/
+      h2 {
+        display:inline-block;
+        overflow:hidden;
+        white-space:nowrap;
+      }
+      
+      h2:first-of-type {    
+        animation: showup 7s ;
+      }
+      
+      h2:last-of-type {
+        width:0px;
+        animation: reveal 7s infinite;
+      }
+      
+      h2:last-of-type span {
+        margin-left:-355px;
+        animation: slidein 7s infinite;
+      }
+      
+      @keyframes showup {
+          0% {opacity:0;}
+          20% {opacity:1;}
+          80% {opacity:1;}
+          100% {opacity:0;}
+      }
+      
+      @keyframes slidein {
+          0% { margin-left:-300px; }
+          20% { margin-left:-300px; }
+          35% { margin-left:0px; }
+          100% { margin-left:0px; }
+      }
+      
+      @keyframes reveal {
+          0% {opacity:0;width:0px;}
+          20% {opacity:1;width:0px;}
+          30% {width:355px;}
+          80% {opacity:1;}
+          100% {opacity:0;width:1100px;}
+      }
+      /*fin efecto titulo h3*/
+      
+      /******************************
+            parrafo estilos
+      *******************************/
+      .caja { 
+        font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+        color: #0c0c0c; 
+        font-size: 18px; 
+        font-weight: 400; 
+        text-align: center; 
+        background: #f6f7f8; 
+        margin: 0 0 25px; 
+        overflow: hidden; 
+        padding: 20px; 
+        border-radius: 35px 0px 35px 0px; 
+        -moz-border-radius: 35px 0px 35px 0px; 
+        -webkit-border-radius: 35px 0px 35px 0px; 
+        }
+      
+      /*****************************
+            estilos vida.html
+      ******************************/
+      .vida-img1 {
+        width: 50%;
+        align-content: center;
+        transition:all 0.3s ease; 
+      }
+      
+      /*
+      La propiedad de transición tiene tres valores:
+      – las propiedades de la transición (en nuestro caso todos ellos)
+      – la velocidad de la transición (en nuestro caso 0,3 segundos)
+      – un tercer valor que permite cambiar cómo se calcula la aceleración y desaceleración, pero dejaremos en blanco optando por la opción de default.
+      */
+      
+      .vida-img1{
+              opacity:0.8;
+      }
+      .vida-img1:hover{
+              opacity:1;
+      }
+      
+      
+      /****************************
+      estilos comercio.html
+      ******************************/
+      .comercio-img1 {
+        width: 50%; }
+        .comercio-img1:hover {
+          backface-visibility: hidden;
+          transform: scale(1.15, 1.15);
+          opacity: 1; }
+      
+      /******************************
+                footer
+      *******************************/
+      .footer-cont {
+        background-color: #1c2331; }
+      
+      .footer-section-redes-sociales {
+        background-color: #0099ff; }
+      
+      .footer-hr {
+        width: 60px;
+        background-color: #0099ff;
+        height: 2px; }
+      
+      .footer-div-Copyright {
+        background-color: rgba(0, 0, 0, 0.2); }
+      
+      .foo-logo {
+        width: 10%; }
+      
+      /********************************
+            estilos botones
+      *********************************/
+      .btn {
+        background: black;
+        color: white;
+        border: none;
+        border-radius: 0.625em;
+        font-weight: bold;
+        cursor: pointer;
+        position: relative;
+        z-index: 1;
+        overflow: hidden; }
+        .btn:hover {
+          color: black; }
+        .btn:after {
+          content: "";
+          background: #0099ff;
+          position: absolute;
+          z-index: -1;
+          left: -20%;
+          right: -20%;
+          top: 0;
+          bottom: 0;
+          transform: skewX(-45deg) scale(0, 1);
+          transition: all 0.5s; }
+      
+      button {
+        height: 50px;
+        width: 300px; }
+        button:hover:after {
+          transform: skewX(-45deg) scale(1, 1);
+          -webkit-transition: all 0.5s;
+          transition: all 0.5s; }
+      
+      
+      /************************
+            Estilos Autos
+      **************************/
+      .auto-img1 {
+        width: 50%;
+        align-content: center; }
+      
+      .auto-parrafo1 {
+        animation-duration: 1s;
+        animation-name: parrafomoviendose;
+        animation-iteration-count:initial; }
+      
+      @keyframes parrafomoviendose {
+        from {
+          margin-left: 100%;
+          width: 300%; }
+        to {
+          margin-left: 0%;
+          width: 100%; } }
+    }
