@@ -1,3 +1,5 @@
+*{ margin: 0; padding: 0; }
+
 .container {
   box-shadow: 0px 15px 25px -4px rgba(30, 30, 60, 0.25); }
 
@@ -25,11 +27,6 @@ main{
   width: 0%; }
 
 
-.parrafo-tipo-seguros{
- 
-  background-color:#fff;
-}
-
 h1 {
   text-align: center; 
   color: #057fd1;
@@ -39,10 +36,10 @@ h1 {
   width: 100%;
 }
 /*estilos index*/
+
 index-img2 {
   width: 100%;
 }
-
 
 /*efecto  4 imagenes abajo  */
 wrapper {
@@ -149,6 +146,10 @@ estilos comercio.html
 
 .foo-logo {
   width: 0%; }
+
+footer section div a{
+  text-decoration:none;
+}
 
 /********************************
       estilos botones
@@ -265,15 +266,13 @@ button {
       .image-caption h1 {
         padding: 45px 0px 5px 0px;
         text-align: center;
-        margin-left: -15px;
+        margin-left: -25px;
         text-transform: uppercase;
-        font-family: 'Indie Flower', cursive;
         font-size: 25px;
-        color: #00bfb6; }
+        color: #0099ff; }
       
       .image-caption p {
         text-align: center;
-        font-family: 'Overpass Mono', monospace;
         color: #fff; }
       
       .image-container:hover .image-caption {
@@ -491,7 +490,7 @@ button {
       /*estilos index*/
       .index-img2 {
         width: 50%;
-       /* box-shadow: 0px 15px 25px -4px rgba(30, 30, 60, 0.25);*/ }
+        }
         .index-img2:hover {
           backface-visibility: hidden;
           transform: scale(1.15, 1.15);
@@ -537,13 +536,11 @@ button {
         text-align: center;
         margin-left: -15px;
         text-transform: uppercase;
-        font-family: 'Indie Flower', cursive;
         font-size: 25px;
-        color: #00bfb6; }
+        color: #0099ff; }
       
       .image-caption p {
         text-align: center;
-        font-family: 'Overpass Mono', monospace;
         color: #fff; }
       
       .image-container:hover .image-caption {
