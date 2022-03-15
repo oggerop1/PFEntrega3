@@ -1,3 +1,11 @@
+* {
+  Margin:0;
+  padding:0;
+}
+.margin-h2{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
 .container {
   box-shadow: 0px 15px 25px -4px rgba(30, 30, 60, 0.25); }
 
@@ -32,14 +40,23 @@ h1 {
 
 .log-central{
   width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 /*estilos index*/
 
-index-img2 {
-  width: 100%;
+.h1-titulo-secciones{
+  margin: 20px;
+}
+
+.index-img2 {
+  width:90%;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 /*efecto  4 imagenes abajo  */
+
 wrapper {
   padding: 0px;
   width: 100%;
@@ -50,7 +67,7 @@ wrapper {
 .image-container {
   float: left;
   width: 100%;
-  height: 200px;
+  height: 250px;
   position: relative;
   margin: 10px;
   cursor: pointer; }
@@ -109,6 +126,13 @@ wrapper {
   -webkit-border-radius: 35px 0px 35px 0px; 
   }
 
+  /*****************************
+      estilos contacto.html
+******************************/
+  .espacio-Contactos{
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
 /*****************************
       estilos vida.html
 ******************************/
@@ -161,6 +185,7 @@ footer section div a{
   font-weight: bold;
   cursor: pointer;
   position: relative;
+  margin: 20px;
    }
   
 
@@ -220,6 +245,8 @@ button {
         width: 40%;
       }
       /*estilos index*/
+    
+
       .index-img2 {
         width: 50%;
       }
