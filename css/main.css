@@ -139,6 +139,7 @@ wrapper {
 .vida-img1 {
   width: 100%;
   align-content: center;
+  margin-top: 25px;
   
 }
 
@@ -146,7 +147,10 @@ wrapper {
 estilos comercio.html
 ******************************/
 .comercio-img1 {
-  width: 100%; }
+    width: 100%; 
+    align-content: center;
+    margin-top: 25px;
+}
   
 
 /******************************
