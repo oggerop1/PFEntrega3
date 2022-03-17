@@ -2,6 +2,8 @@
   Margin:0;
   padding:0;
 }
+
+
 .margin-wave{
   margin-top: 1px;
   margin-bottom: 1px;
@@ -193,7 +195,7 @@ footer section div a{
   font-weight: bold;
   cursor: pointer;
   position: relative;
-  margin: 20px;
+  margin: 30px;
    }
   
 
@@ -210,6 +212,10 @@ button {
   width: 100%;
   align-content: center; }
 
+  /********Preguntas Frecuentes*****/
+  .section-preguntasFrecuentes-margin{
+    margin-bottom: 20px;
+  }
 
 /********************************************
     ***************************************
